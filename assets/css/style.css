@@ -20,7 +20,7 @@
   
   /* HEADINGS */
   
-  h1, p {
+  h1 {
     color: #fff;
     text-align: center;
     line-height: 1.4;
@@ -44,9 +44,23 @@
     margin: 0 auto;
   }
 
+  .divider{
+    margin: 10px;
+    background-color: rgba(55, 87, 130, 0.65);
+    width: 65%;
+    height: 1px;
+    -webkit-box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.56);
+      -moz-box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.56);
+      box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.56);
+  }
+
+  .tomato-color{
+    color: tomato;
+  }
+
   .page-wrapper{
     width: 100%;
-    height: auto;
+    height: 3000px;
   }
 
   .grad-bar {
@@ -104,6 +118,7 @@
     top: 0;
     width: 100%;
     height: 55px;
+    z-index: 1;
     justify-content: space-evenly;
     align-items: center;
     background-color: #F7F8FC;
@@ -259,14 +274,15 @@
     cursor: pointer;
   }
 
+  /* School Types */
+
   .school-types{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -35px;
+    margin-bottom: 30px;
   }
-
-  /* School Types */
 
   .school-type-card-block{
     display: flex;
@@ -312,3 +328,547 @@
   background-color: rgb(120, 120, 120, 0.1);
   border-radius: 12px;
 }
+
+/* Popular Schools In Yor Region */
+
+.popular-schools-in-region{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #f7f8fc;
+  background-image: url("../image/bg-popular-schools.svg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.popular-schools-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-schools{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  overflow: hidden;
+  align-items: center;
+  
+  
+}
+
+.slide-navigation{
+  display: none;
+  justify-content: space-between;
+  width: 1250px;
+  position: absolute;
+  top: 50%;
+}
+
+.slide-navigation i{
+  font-size: 3.9rem;
+  color: tomato;
+  cursor: pointer;
+}
+
+.schools-card-block{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 270px;
+  background-color: #fff;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+}
+
+.schools-card-block img{
+  position: relative;
+  width: 270px;
+  height: auto;
+  max-height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.rate {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  padding: 7px;
+  /*background-color: #f79640;*/
+  background-color: #73ca14;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.school-name{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.region{
+  justify-content: flex-start;
+  font-size: .8rem;
+  color: #000;
+}
+
+.facilities{
+  margin-top: 10px;
+}
+
+.facilities ul li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  color: #000;
+  font-size: .8rem;
+}
+
+.facilities ul li i{
+  font-size: .9rem;
+  margin: 3px;
+  color: tomato;
+}
+
+.school-card-bottom{
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.comment-and-review-counts ul{
+  display: flex;
+  list-style: none;
+}
+.comment-and-review-counts ul li{
+  display: flex;
+  color: #000;
+  align-items: center;
+  font-size: .8rem;
+}
+
+.comment-and-review-counts ul li i{
+  font-size: .9rem;
+  margin: 3px;
+}
+
+.sec{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 2px;
+  background-color: #2dc44d;
+  border-radius: 7px;
+  color: #fff;
+}
+
+/* free-consultancy" */
+
+.free-consultancy{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: tomato;
+}
+
+.consultancy-icon{
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.consultancy-icon img{
+  width: 85px;
+  height: auto;
+}
+
+.consultancy-title{
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 20px;
+  font-weight: 700;
+}
+
+.consultancy-title p{
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.consultancy-action a{
+  color: #fff;
+  font-weight: 700;
+  padding: 15px;
+  background-color: rgba(55, 87, 130, 0.65);
+  border-radius: 12px;
+  transition: 0.4s;  
+}
+
+.consultancy-action a:hover{
+  background-color: rgba(55, 87, 130, 0.95);
+}
+
+/* rehber blog */
+
+.rehber-blog{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.rehber-blog-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-blogs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  max-width: 1160px;
+  
+}
+
+.blog-card{
+  display: flex;
+  flex-direction: row;
+  max-width: 520px;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+}
+.blog-header{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.blog-header img{
+  width: 170px;
+  height: 100%;
+  border-radius: 7px;
+  object-fit: cover;
+  margin: auto 0;
+}
+
+.blog-container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 5px;
+  padding: 5px 5px;
+  border-radius: 20px;
+}
+
+.blog-title{
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.blog-info{
+  display: flex;
+  justify-content: flex-start;
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.created-date, .blog-comment-and-review{
+  display: flex;
+  align-items: center;
+
+}
+
+.created-date i, .blog-comment-and-review i{
+  font-size: .9rem;
+  color: tomato;
+  margin: 3px;
+}
+
+.blog-description {
+  margin: 10px 3px 3px 5px;
+  font-size: 14px;
+}
+
+.blog-action a{
+  padding: 7px;
+  display: flex;
+  width: 100px;
+  align-items: flex-end;
+  font-size: 0.8rem;
+  color: tomato;
+  background-color: rgb(120, 120, 120, 0.1);
+  border-radius: 12px;
+}
+
+/* most-searched-regions-by-users */
+
+.most-searched-regions-by-users{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.most-searched-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.most-searched-regions{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1160px;
+}
+
+.regions-card{
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.regions-card img{
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.searched-region-area{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 10px;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(255,255,255,0.16) 100%);
+}
+
+.searched-region{
+  display: flex; 
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+/* Consultancy Form */
+
+.consultancy-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  
+  
+  margin-top: 2%;
+  
+}
+
+.form-area{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+}
+
+form ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.consultancy-form-item{
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid tomato;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
+}
+
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  padding: 20px;
+
+}
+
+.form-title{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.form-title p{
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.form-steps ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-steps ul li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.form-steps ul li span{
+  color: tomato;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.textarea{
+  min-width: 300px;
+  min-height: 70px;
+  max-height: 70px;
+  max-width: 300px;
+}
+
+.frm-btn{
+  height: 50px;
+  width: 180px;
+  border: none;
+  background-color: rgb(120, 120, 120, 0.1);
+  border-radius: 12px;
+  color: tomato;
+  font-weight: 700; 
+}
+
+/* schools-with-last-comment */
+
+.schools-with-last-comment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.last-comment-schools{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1160px;
+  margin-top: 2%;
+}
+
+/* Footer */
+
+.footer{
+  margin-top: 20px;
+  padding: 75px;
+  border-top: 2px solid tomato;
+  background-color: #fff;
+  box-shadow: 0 10px 76px -12px rgba(#001D93, .1);
+}
+
+.footer-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-top img{
+  height: 25px;
+  width: auto;
+}
+
+.footer-menu{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-popular-regions nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 650px;
+}
+
+.footer-pages nav{
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  width: 200px;
+}
+
+.footer-popular-regions nav ul, .footer-pages nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+
+.footer-popular-regions nav ul li, .footer-pages nav ul li{
+  margin: 0 auto;
+  width: 200px;
+}
+
+.footer-popular-regions nav ul li a, .footer-pages nav ul li a{
+  text-decoration: none;
+  font-size: 12px;
+  color: tomato;
+}
+
+
+
+
+
