@@ -17,7 +17,16 @@
     padding: 0;
   }
 
+  /* color */
   
+  .tomato-color{
+    color: tomato;
+  }
+  
+  .text-color{
+    color: rgb(60, 60, 60);
+  }
+
   /* HEADINGS */
   
   h1 {
@@ -29,7 +38,7 @@
   h1 {
     font-size: 2.2rem;
   }
-  
+  /*
   h2 {
     color: #000;
     font-size: 1.3rem;
@@ -38,11 +47,10 @@
     margin-bottom: 10px;
   }
   
+  */
+  
+  
   /* BASIC SETUP */
-
-  .center{
-    margin: 0 auto;
-  }
 
   .divider{
     margin: 10px;
@@ -54,8 +62,16 @@
       box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.56);
   }
 
-  .tomato-color{
-    color: tomato;
+  .section-title{
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.4;
+    margin: 20px auto;
+  }
+
+  .section-p{
+    font-size: 1.1rem;
+    text-align: center;
   }
 
   .page-wrapper{
@@ -145,7 +161,6 @@
     justify-content: space-around;
   }
 
-
   nav ul{
     display: flex;
     list-style: none;
@@ -163,16 +178,15 @@
     justify-content: center;
   }
 
-  .nav-item i{
+  .nav-item a i{
     font-size: 16px;
     margin-right: 5px;
-    
+    color: rgb(60, 60, 60, .7);
   }
 
   .nav-item a{
     position: relative;
-    font-size: 14px;
-    color: rgb(60, 60, 60);
+    font-size: 14px;  
   }
 
   .nav-item a:hover::after{
@@ -209,7 +223,6 @@
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    color: tomato;
     transition: 0.3s;
   }
 
@@ -226,7 +239,7 @@
     width: 100%;
     height: 2px;
     transform: scaleX(0);
-    background-color: rgb(60, 60, 60);;
+    background-color: rgb(60, 60, 60, .3);;
     transition: transform 0.3s;
   }
 
@@ -290,7 +303,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 300px;
+    width: 300px;
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -300,7 +313,6 @@
 .school-type-card-block img{
     width: 65px;
     height: auto;
-
 }
 
 .school-type-card-block .title{
@@ -308,17 +320,16 @@
     justify-content: center;
     font-size: 1.2rem;
     margin-top: 20px;
-    color: #10182F
+    color: #10182F;
+    color: rgb(60, 60, 60);
 }
 
 .school-type-card-block .title b{
     font-weight: 500;
     margin-right: 5px;
-    
 }
 
 .school-type-card-block a{
-
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -327,6 +338,11 @@
   color: tomato;
   background-color: rgb(120, 120, 120, 0.1);
   border-radius: 12px;
+  transition: .4s;
+}
+
+.school-type-card-block a:hover{
+  background-color: rgb(120, 120, 120, 0.2);
 }
 
 /* Popular Schools In Yor Region */
@@ -344,21 +360,12 @@
   background-size: cover;
 }
 
-.popular-schools-title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .popular-schools{
   display: flex;
   flex-wrap: wrap;
   width: 1160px;
   overflow: hidden;
   align-items: center;
-  
-  
 }
 
 .slide-navigation{
@@ -418,13 +425,13 @@
 .school-name{
   font-size: 1rem;
   font-weight: 700;
-  color: #000;
+  color: rgb(60, 60, 60);
 }
 
 .region{
   justify-content: flex-start;
   font-size: .8rem;
-  color: #000;
+  color: rgb(60, 60, 60);
 }
 
 .facilities{
@@ -436,7 +443,7 @@
   align-items: center;
   justify-content: flex-start;
   list-style: none;
-  color: #000;
+  color: rgb(60, 60, 60);
   font-size: .8rem;
 }
 
@@ -461,7 +468,7 @@
 }
 .comment-and-review-counts ul li{
   display: flex;
-  color: #000;
+  color: rgb(60, 60, 60);
   align-items: center;
   font-size: .8rem;
 }
@@ -469,6 +476,7 @@
 .comment-and-review-counts ul li i{
   font-size: .9rem;
   margin: 3px;
+  color: rgb(60, 60, 60, .7);
 }
 
 .sec{
@@ -538,14 +546,6 @@
 .rehber-blog{
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
-  align-items: center;
-  justify-content: center;
-}
-
-.rehber-blog-title{
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -555,9 +555,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1%;
   max-width: 1160px;
-  
 }
 
 .blog-card{
@@ -594,43 +592,51 @@
 
 .blog-title{
   display: block;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
+  color: rgb(60, 60, 60);
 }
 
 .blog-info{
   display: flex;
-  justify-content: flex-start;
+  width: 60%;
+  justify-content: space-between;
   font-size: .7rem;
-  font-weight: 600;
 }
 
 .created-date, .blog-comment-and-review{
   display: flex;
   align-items: center;
+  color: rgb(60, 60, 60,);
 
 }
 
 .created-date i, .blog-comment-and-review i{
-  font-size: .9rem;
-  color: tomato;
+  font-size: .8rem;
+  color: rgb(60, 60, 60, .7);
   margin: 3px;
 }
 
 .blog-description {
   margin: 10px 3px 3px 5px;
-  font-size: 14px;
+  font-size: .8rem;
+  color: rgb(60, 60, 60);
 }
 
 .blog-action a{
-  padding: 7px;
+  padding: 5px 5px;
   display: flex;
-  width: 100px;
+  width: 90px;
   align-items: flex-end;
   font-size: 0.8rem;
   color: tomato;
   background-color: rgb(120, 120, 120, 0.1);
-  border-radius: 12px;
+  border-radius: 7px;
+  transition: .4s;
+}
+
+.blog-action a:hover{
+  background-color: rgb(120, 120, 120, 0.2);
 }
 
 /* most-searched-regions-by-users */
@@ -640,14 +646,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2%;
-}
-
-.most-searched-title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .most-searched-regions{
@@ -700,11 +698,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; 
-  
-  
-  margin-top: 2%;
-  
+  width: 100%;
+  margin-top: 30px;
 }
 
 .form-area{
@@ -728,10 +723,20 @@ form ul{
   width: 300px;
   height: 30px;
   border: none;
-  border-bottom: 1px solid tomato;
+  border-bottom: 1px solid rgb(60, 60, 60, .7);
   border-radius: 3px;
   margin: 10px;
   padding: 5px;
+  color: rgb(60, 60, 60);
+}
+
+.form-area ul li input:focus{
+  outline-style: none;
+}
+
+.form-area ul li select, textarea{
+  outline-style: none;
+  color: rgb(60, 60, 60);
 }
 
 
@@ -750,7 +755,7 @@ form ul{
 }
 
 .form-title p{
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -766,12 +771,13 @@ form ul{
   justify-content: flex-start;
   font-size: 1.2rem;
   margin: 20px;
+  color: rgb(60, 60, 60);
 }
 
 .form-steps ul li span{
-  color: tomato;
-  margin-right: 5px;
-  font-size: 1.2rem;
+  color: rgb(60, 60, 60, .7);
+  margin-right: 8px;
+  font-size: 1rem;
 }
 
 .textarea{
@@ -789,6 +795,12 @@ form ul{
   border-radius: 12px;
   color: tomato;
   font-weight: 700; 
+  transition: .4s;
+  outline-style: none;
+}
+
+.frm-btn:hover{
+  background-color: rgb(120, 120, 120, 0.2);
 }
 
 /* schools-with-last-comment */
@@ -806,69 +818,149 @@ form ul{
   align-items: center;
   justify-content: center;
   width: 1160px;
-  margin-top: 2%;
 }
 
 /* Footer */
 
 .footer{
   margin-top: 20px;
-  padding: 75px;
-  border-top: 2px solid tomato;
+  padding: 55px;
+  border-top: 1px solid rgb(60, 60, 60, .2);
   background-color: #fff;
   box-shadow: 0 10px 76px -12px rgba(#001D93, .1);
 }
 
 .footer-top{
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.f-copyright{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(60, 60, 60);
+  font-size: .7rem;
+  margin-top: 20px;
 }
 
 .footer-top img{
   height: 25px;
-  width: auto;
+  width: 128px;
 }
 
 .footer-menu{
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
+  max-width: 1600px;
 }
 
-.footer-popular-regions nav{
+.footer-popular-region{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 650px;
+  flex-grow: 1;
+  border-right: 1px solid rgb(60, 60, 60, .2);
+  margin: 10px 5px;
 }
 
-.footer-pages nav{
+.footer-most-searched{
   display: flex;
   flex-direction: column;
-  align-items: unset;
-  width: 200px;
+  flex-grow: 1;
+  border-right: 1px solid rgb(60, 60, 60, .2);
+  margin: 10px 15px;
 }
 
-.footer-popular-regions nav ul, .footer-pages nav ul{
+.footer-scholarship-exam{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  
+}
+
+.f-title{
+  color: rgb(60, 60, 60);
+  font-weight: 700;
+  margin: 10px auto;
+}
+
+.f-content ul{
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-
+  justify-content: space-between;
 }
 
-.footer-popular-regions nav ul li, .footer-pages nav ul li{
-  margin: 0 auto;
-  width: 200px;
+.f-content ul li{
+  width: 50%;
 }
 
-.footer-popular-regions nav ul li a, .footer-pages nav ul li a{
+.f-content ul li a{
   text-decoration: none;
-  font-size: 12px;
-  color: tomato;
+  color: rgb(60, 60, 60);
+  font-size: .8rem;
 }
 
+.f-info ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
 
+.f-info ul li{
+  margin: 0 10px;
+}
 
+.f-info ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .7rem;
+  color: rgb(60, 60, 60);
+}
 
+.f-info ul li a img{
+  width: 14px;
+  height: auto;
+  margin: 5px;
+}
+
+.f-social ul{
+  list-style: none;
+  display: flex;
+}
+
+.f-social ul li a img{
+  width: 18px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.f-contact ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-contact ul li{
+  margin: 0 10px;
+}
+
+.f-contact ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem;
+  color: rgb(60, 60, 60);
+}
 
