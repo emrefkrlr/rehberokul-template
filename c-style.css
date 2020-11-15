@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body{
+    background-color: #F7F8FC;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+.component-popular-shools{
+    max-width: 1160px;
+    margin: 0 auto;
+ 
+}
+/*
+.schools-card-block{
+  display: block;
+  position: relative;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 270px;
+  background-color: #fff;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+}
+
+.schools-card-block img{
+  position: relative;
+  width: 270px;
+  height: auto;
+  max-height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.rate {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    padding: 7px;
+    /*background-color: #f79640;
+    background-color: #73ca14;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+  }
+  
+  .school-name{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+  }
+  
+  .region{
+    justify-content: flex-start;
+    font-size: .8rem;
+    color: rgb(60, 60, 60);
+  }
+  
+  .facilities{
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  
+  .facilities ul li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    color: rgb(60, 60, 60);
+    font-size: .8rem;
+  }
+  
+  .facilities ul li i{
+    font-size: .9rem;
+    margin: 3px;
+    color: tomato;
+  }
+  
+  .school-card-bottom{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .comment-and-review-counts ul{
+    display: flex;
+    list-style: none;
+  }
+  .comment-and-review-counts ul li{
+    display: flex;
+    color: rgb(60, 60, 60);
+    align-items: center;
+    font-size: .8rem;
+  }
+  
+  .comment-and-review-counts ul li i{
+    font-size: .9rem;
+    margin: 3px;
+    color: rgb(60, 60, 60, .7);
+  }
+  
+  .sec{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 2px;
+    background-color: #2dc44d;
+    border-radius: 7px;
+    color: #fff;
+  }
+
+  */
+
+.school-card-vertical-block{
+  display: block;
+  position: relative;
+  background-color: #fff;
+  width: 270px;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+  border-radius: 7px;
+  margin: 10px auto;
+}
+
+.school-card-vertical-block img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.score{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  padding: 7px;
+  /*background-color: #f79640;*/
+  background-color: #73ca14;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.inner{
+  padding: 5px;
+}
+
+.school-name{
+  border: 1px solid rebeccapurple;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+}
+
+.school-region{
+  border: 1px solid red;
+  font-size: .8rem;
+  color: rgb(60, 60, 60);
+}
+
+.school-facilities ul li{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: .8rem;
+  color: rgb(60, 60, 60);
+  border: 1px solid yellowgreen;
+}
+
+.school-facilities ul li svg{
+  width: 16px;
+  height: 16px;
+  fill: tomato;
+}
+  

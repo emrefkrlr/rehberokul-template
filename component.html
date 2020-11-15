@@ -1,71 +1,486 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html,
-        body {
-          position: relative;
-          height: 100%;
-        }
-    
-        body {
-          background: #eee;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: #000;
-          margin: 0;
-          padding: 0;
-    
-        }
-    
-        .swiper-container {
-          width: 100%;
-          height: 100%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    
-        .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: #fff;
-          height: calc((100% - 30px) / 2);
-    
-          /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
-        }
-      </style>
+      <script src="http://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="c-style.css">
+      <link rel="stylesheet" href="lslider.css">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+      
 </head>
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
+
+    <div class="component-popular-shools">
+
+        <ul id="responsive" class="lightSlider">
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="lightSlider">
+                <div class="schools-card-block">
+                    <img src="assets/image/resim-1.jpg" alt="">
+                    <div class="rate">4.4</div>
+                    <div class="inner">
+                        <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+                        <div class="region">Sancaktepe / İstanbul</div>
+                        <div class="facilities">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">people</i>
+                                    Psikolojik danışman: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">child_care</i>
+                                    Yaş aralığı: 2 - 6
+                                </li>
+                                <li>
+                                    <i class="material-icons">airport_shuttle</i>
+                                    Servis: Var
+                                </li>
+                                <li>
+                                    <i class="material-icons">public</i>
+                                    Dil olanakları: İngilizce, Almanca, Rusca
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="school-card-bottom">
+                            <div class="comment-and-review-counts">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons">public</i>
+                                        18
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="material-icons">remove_red_eye</i>
+                                        22
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                                <a class= "sec" href="#">
+                                    Seç
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="school-card-vertical-block">
+        <img src="assets/image/resim-1.jpg" alt="">
+        <div class="score">4.4</div>
+        <div class="inner">
+            <div class="school-name">Özel Sancaktepe Yenidoğu Okulları Montessori Anaokulu</div>
+            <div class="school-region">Sancaktepe / İstanbul</div>
+            <div class="school-facilities">
+                <ul>
+                    <li>
+                        <img src="assets/image/icons/user.svg" alt="">
+                        Psikolojik danışman: Var
+                    </li>
+                    <li>
+                        <img src="assets/image/icons/little-kid.svg" alt="">
+                        Yaş aralığı: 2 - 6
+                    </li>
+                    <li>
+                        <img src="assets/image/icons/bus.svg" alt="">
+                        Servis: Var
+                    </li>
+                    <li>
+                        <img src="assets/image/icons/bus.svg" alt="">
+                        Dil olanakları: İngilizce, Almanca, Rusca
+                    </li>
+                </ul>
+            </div>
+            <div class="school-card-bottom">
+                <div class="comment-and-review-counts">
+                    <ul>
+                        <li>
+                            <i class="material-icons">public</i>
+                            18
+                        </li>
+                        
+                        <li>
+                            <i class="material-icons">remove_red_eye</i>
+                            22
+                        </li>
+                    </ul>
+                </div>
+                <div class="sec">
+                    <a class= "sec" href="#">
+                        Seç
+                        <i class="material-icons">navigate_next</i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
+
+    </div>
+    
+    
+    <script src="c-app.js" ></script>
+    <script src="lsilider.min.js" ></script>
 </body>
 </html>
