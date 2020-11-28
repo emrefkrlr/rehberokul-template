@@ -76,7 +76,7 @@
 
   .page-wrapper{
     width: 100%;
-    height: 100%;
+    height: 3000px;
   }
 
   .grad-bar {
@@ -134,7 +134,7 @@
     top: 0;
     width: 100%;
     height: 55px;
-    z-index: 99;
+    z-index: 1;
     justify-content: space-evenly;
     align-items: center;
     background-color: #F7F8FC;
@@ -349,203 +349,147 @@
 
 /* Popular Schools In Yor Region */
 
-.section-popular-school{
+.popular-schools-in-region{
+  display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
   background-color: #f7f8fc;
   background-image: url("../image/bg-popular-schools.svg");
   background-attachment: fixed;
   background-size: cover;
 }
 
-.component-popular-shools{
-  max-width: 1060px;
-  margin: 0 auto;
+.popular-schools{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  overflow: hidden;
+  align-items: center;
 }
 
-.school-card-vertical-block{
-  display: block;
+.slide-navigation{
+  display: none;
+  justify-content: space-between;
+  width: 1250px;
+  position: absolute;
+  top: 50%;
+}
+
+.slide-navigation i{
+  font-size: 3.9rem;
+  color: tomato;
+  cursor: pointer;
+}
+
+.schools-card-block{
+  display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 270px;
   background-color: #fff;
-  width: 250px;
-  box-shadow: 0 10px 13px -12px rgba(0,29,147, .15);
-  border-radius: 7px;
-  margin: 10px auto;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
 }
 
-.school-card-vertical-block img{
-  width: 100%;
-  max-height: 130px;
+.schools-card-block img{
+  position: relative;
+  width: 270px;
+  height: auto;
+  max-height: 200px;
+  margin: 0 auto;
   object-fit: cover;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  border-radius: 7px;
 }
 
-.score{
+.rate {
   position: absolute;
   top: 5px;
   right: 5px;
   font-size: 14px;
   padding: 7px;
   /*background-color: #f79640;*/
-  /*background-color: #73ca14;*/
-  background-color: #20357c;
+  background-color: #73ca14;
   border-radius: 5px;
   color: #fff;
 }
 
-.approved-school{
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 5px;
-  left: 5px;
-  background-color: rgb(64, 64, 64, .6);
-  border-radius: 50%;
-}
-.approved-school svg{
-  /*fill: rgb(255, 99, 71);*/
-  /*fill: #2dc44d;*/
-  fill: orange;
-}
-
-.tooltip--right::before,
-.tooltip--right::after {
-  --scale:0;
-  position: absolute;
-  top: -4px;
-  left: 100%;
-  transform: translateX(2%) translateY(0) scale(var(--scale));
-  transform-origin: left center;
-}
-
-.tooltip--right::before{
-  content: attr(data-tooltip);
-  color: #fff;
-  background-color: rgb(60, 60, 60, .8);
-  font-size: .7rem;
-  padding: 7px;
-  border-radius: 7px;
-  width: max-content;
-}
-
-.tooltip--right:hover::before{
-  --scale:1;
-}
-
-.discount{
-  display: flex;
-  align-items: center;
-  position: absolute;
-  background-color: rgb(64, 64, 64, .8);
-  top: 100px;
-  color: #fff;
-  padding: 5px;
-  border-radius: 7px;
-  font-size: .8rem;
-}
-
-.discount svg{
-  fill: tomato;
-  margin-right: 5px;
-}
-
 .inner{
-  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px;
 }
 
 .school-name{
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
 }
 
-.school-region{
-  font-size: .7rem;
+.region{
+  justify-content: flex-start;
+  font-size: .8rem;
   color: rgb(60, 60, 60);
-  margin-bottom: 7px;
 }
 
-.school-facilities ul li{
+.facilities{
+  margin-top: 10px;
+}
+
+.facilities ul li{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   list-style: none;
-  font-size: .75rem;
   color: rgb(60, 60, 60);
+  font-size: .8rem;
 }
 
-.school-facilities ul li svg{
-  fill: tomato;
-  margin-right: 3px;
+.facilities ul li i{
+  font-size: .9rem;
+  margin: 3px;
+  color: tomato;
 }
+
 .school-card-bottom{
   display: flex;
+  margin-top: 10px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 7px 5px;
+  
 }
 
 .comment-and-review-counts ul{
   display: flex;
   list-style: none;
-  
 }
-
 .comment-and-review-counts ul li{
-  color: rgb(60, 60, 60);
   display: flex;
+  color: rgb(60, 60, 60);
   align-items: center;
-  font-size: .6rem;
-  margin: 5px 5px 0 0;
-}
- 
-.comment-and-review-counts ul li svg{
-  fill: rgb(60, 60, 60, .7);
-  margin-right: 3px;
+  font-size: .8rem;
 }
 
-.sec a{
+.comment-and-review-counts ul li i{
+  font-size: .9rem;
+  margin: 3px;
+  color: rgb(60, 60, 60, .7);
+}
+
+.sec{
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: .8rem;
-  padding: 4px;
-  width: max-content;
-  /*background-color: #f79640;*/
+  font-size: 14px;
+  padding: 2px;
   background-color: #2dc44d;
-  border-radius: 5px;
+  border-radius: 7px;
   color: #fff;
-}
-
-.sec a svg{
-  fill: #fff;
-}
-
-.swiper-pagination-bullets{
-  bottom: -2px !important;
-}
-
-.swiper-pagination-bullet-active{
-  background-color: tomato !important;
-}
-
-.swiper-button-next{
-  color: rgb(60, 60, 60, .5) !important;
-  right: 5% !important;
-}
-
-.swiper-button-prev{
-  color: rgb(60, 60, 60, .5) !important;
-  left: 5% !important;
-}
-
-.swiper-wrapper{
-  width: 100%;
-  height: 675px !important;
-}
-
-.swiper-slide {
-  height: calc((100% - 10px) / 2) !important;
 }
 
 /* free-consultancy" */
@@ -597,6 +541,104 @@
 
 .consultancy-action a:hover{
   background-color: rgba(55, 87, 130, 0.95);
+}
+
+/* rehber blog */
+
+.rehber-blog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-blogs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1160px;
+}
+
+.blog-card{
+  display: flex;
+  flex-direction: row;
+  max-width: 520px;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+}
+.blog-header{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.blog-header img{
+  width: 170px;
+  height: 100%;
+  border-radius: 7px;
+  object-fit: cover;
+  margin: auto 0;
+}
+
+.blog-container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 5px;
+  padding: 5px 5px;
+  border-radius: 20px;
+}
+
+.blog-title{
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+}
+
+.blog-info{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  font-size: .7rem;
+}
+
+.created-date, .blog-comment-and-review{
+  display: flex;
+  align-items: center;
+  color: rgb(60, 60, 60,);
+
+}
+
+.created-date i, .blog-comment-and-review i{
+  font-size: .8rem;
+  color: rgb(60, 60, 60, .7);
+  margin: 3px;
+}
+
+.blog-description {
+  margin: 10px 3px 3px 5px;
+  font-size: .8rem;
+  color: rgb(60, 60, 60);
+}
+
+.blog-action a{
+  padding: 5px 5px;
+  display: flex;
+  width: 90px;
+  align-items: flex-end;
+  font-size: 0.8rem;
+  color: tomato;
+  background-color: rgb(120, 120, 120, 0.1);
+  border-radius: 7px;
+  transition: .4s;
+}
+
+.blog-action a:hover{
+  background-color: rgb(120, 120, 120, 0.2);
 }
 
 /* most-searched-regions-by-users */
@@ -652,182 +694,6 @@
   font-size: 1rem;
 }
 
-
-/* Recent Blogs */
-.component-recent-blogs{
-  max-width: 1060px;
-  margin: 20px auto;
-}
-
-.blogs-area{
-  display: flex;
-  height: auto;
-}
-
-.blogs-left-side{
-  display: flex;
-  flex-direction: column;
-  max-width: 30%;
-}
-
-
-.blogs-center-side{
-  display: flex;
-  max-width: 40%;
-  
-}
-
-.blogs-right-side{
-  display: flex;
-  flex-direction: column;
-  max-width: 30%;
-}
-
-.blog-image{
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;  
-}
-
-.gradient{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.6) 15%, rgba(255,255,255,0) 100%);
-}
-
-.blog-card{
-  display: block;
-  position: relative;
-  margin: 5px;
-  box-shadow: 0 10px 13px -12px rgba(0,29,147, .15);
-  
-}
-
-.blog-label{
-  position: absolute;
-  top: 5px;
-  left: 5px;
-}
-
-.blog-label ul{
-  list-style: none;
-  display: flex;
-}
-
-.blog-label ul li{
-  margin-right: 5px;
-  border-radius: 5px;
-  padding: 1px 6px;
-}
-
-.blog-label ul li a{
-  text-decoration: none;
-  font-size: .7rem;
-  color: #fff
-}
-
-.label-cocuk{
-  background-color: purple;
-  
-}
-.label-hayata-dair{
-  background-color: tomato;
-}
-
-.label-anaokulu-ve-kres{
-  background-color: darkcyan;
-}
-
-.label-ilkokul{
-  background-color: cornflowerblue;
-}
-
-.label-ortaokul{
-  background-color: darkorange ;
-}
-
-.label-lise{
-  background-color: darkslategrey;
-}
-
-.label-kolejler{
-  background-color: forestgreen;
-}
-
-.label-egitim{
-  background-color: dimgray;
-}
-
-.blog-bottom{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding: 5px;
-}
-
-.blog-title{
-  color: #fff;
-  font-size: 1rem;
-}
-
-.blog-created-date{
-  color: rgb(255, 255, 255, .7);
-  font-size: .7rem;
-}
-
-.blog-comment-and-review ul{
-  display: flex;
-  list-style: none;
-}
-
-.blog-comment-and-review ul li{
-  color: rgb(255, 255, 255, .7);
-  display: flex;
-  align-items: center;
-  font-size: .6rem;
-  margin: 5px 5px 0 0;
-}
-
-.blog-comment-and-review ul li svg{
-  fill: rgb(255, 255, 255, .7);
-}
-
-
-/* section-schools-with-last-comment */
-
-.last-comment-area{
-  position: relative;
-  display: block;
-  max-width: 1060px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.last-comment-area > .swiper-container-last-comment > .swiper-wrapper{
-  max-height: 350px;
-}
-
-.last-comment-area > .swiper-button-next{
-  color: rgb(60, 60, 60, .5) !important;
-  right: 0 !important;
-  top: 45% !important;
-}
-
-.last-comment-area > .swiper-button-prev{
-  color: rgb(60, 60, 60, .5) !important;
-  left: 0 !important;
-  top: 45% !important;
-}
-
 /* Consultancy Form */
 
 .consultancy-form{
@@ -859,8 +725,7 @@ form ul{
   width: 300px;
   height: 30px;
   border: none;
-  /*border-bottom: 1px solid rgb(60, 60, 60, .7);*/
-  border-bottom: 1px solid tomato;
+  border-bottom: 1px solid rgb(60, 60, 60, .7);
   border-radius: 3px;
   margin: 10px;
   padding: 5px;
@@ -880,9 +745,10 @@ form ul{
 .form-content{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 600px;
   padding: 20px;
+
 }
 
 .form-title{
@@ -906,7 +772,7 @@ form ul{
   align-items: center;
   justify-content: flex-start;
   font-size: 1.2rem;
-  margin: 10px;
+  margin: 20px;
   color: rgb(60, 60, 60);
 }
 
@@ -939,92 +805,21 @@ form ul{
   background-color: rgb(120, 120, 120, 0.2);
 }
 
-/* SSS */
+/* schools-with-last-comment */
 
-.component-sss{
-  max-width: 1060px;
-  margin: 20px auto;
+.schools-with-last-comment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2%;
 }
 
-.faq-header{
-  font-size: 1.2rem;
-  border-bottom: 1px dotted #ccc;
-  padding: 24px;
-  color: rgb(60, 60, 60);
-  font-weight: 700;
-}
-
-.faq-content {
-  margin: 0 auto;
-}
-
-.faq-question {
-  padding: 15px 0;
-  border-bottom: 1px dotted #ccc;
-}
-
-.panel-title {
-  font-size: .9rem;
-  width: 100%;
-  position: relative;
-  margin: 0;
-  padding: 10px 10px 0 38px;
-  display: block;
-  cursor: pointer;
-  color: rgb(60, 60, 60);
-  font-weight: 700;
-}
-
-.panel-content {
-  font-size: .8rem;
-  padding: 0px 14px;
-  margin: 0 40px;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  position: relative;
-  opacity: 0;
-  -webkit-transition: .2s ease;
-  -moz-transition: .2s ease;
-  -o-transition: .2s ease;
-  transition: .2s ease;
-  color: rgb(60, 60, 60);
-}
-
-.panel:checked ~ .panel-content{
-  height: auto;
-  opacity: 1;
-  padding: 14px;
-}
-
-.plus {
-  position: absolute;
-  margin-left: 20px;
-  margin-top: 10px;
-  z-index: 5;
-  font-size: 1.2rem;
-  line-height: 100%;
-  color: tomato;
-  -webkit-user-select: none;    
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-transition: .2s ease;
-  -moz-transition: .2s ease;
-  -o-transition: .2s ease;
-  transition: .2s ease;
-}
-
-.panel:checked ~ .plus {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.panel {
-  display: none;
+.last-comment-schools{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1160px;
 }
 
 /* Footer */

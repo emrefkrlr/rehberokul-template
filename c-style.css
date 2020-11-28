@@ -18,139 +18,51 @@
   }
 
 
+  .section-title{
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.4;
+    margin: 20px auto;
+  }
 
+  .text-color{
+    color: rgb(60, 60, 60);
+  }
+
+  .section-p{
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+/* POPULAR SCHOOL */
+.section-popular-school{
+  background-color: #f7f8fc;
+  background-image: url("assets/image/bg-popular-schools.svg");
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .component-popular-shools{
-    max-width: 1160px;
-    margin: 0 auto;
- 
-}
-/*
-.schools-card-block{
-  display: block;
-  position: relative;
-  flex-direction: column;
-  margin: 10px auto;
-  width: 270px;
-  background-color: #fff;
-  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
-}
-
-.schools-card-block img{
-  position: relative;
-  width: 270px;
-  height: auto;
-  max-height: 200px;
+  max-width: 1060px;
   margin: 0 auto;
-  object-fit: cover;
-  border-radius: 7px;
 }
-
-.rate {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 14px;
-    padding: 7px;
-    /*background-color: #f79640;
-    background-color: #73ca14;
-    border-radius: 5px;
-    color: #fff;
-  }
-  
-  .inner{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 5px;
-  }
-  
-  .school-name{
-    font-size: 1rem;
-    font-weight: 700;
-    color: rgb(60, 60, 60);
-  }
-  
-  .region{
-    justify-content: flex-start;
-    font-size: .8rem;
-    color: rgb(60, 60, 60);
-  }
-  
-  .facilities{
-    margin-top: 10px;
-    justify-content: flex-start;
-  }
-  
-  .facilities ul li{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    list-style: none;
-    color: rgb(60, 60, 60);
-    font-size: .8rem;
-  }
-  
-  .facilities ul li i{
-    font-size: .9rem;
-    margin: 3px;
-    color: tomato;
-  }
-  
-  .school-card-bottom{
-    display: flex;
-    margin-top: 10px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  
-  .comment-and-review-counts ul{
-    display: flex;
-    list-style: none;
-  }
-  .comment-and-review-counts ul li{
-    display: flex;
-    color: rgb(60, 60, 60);
-    align-items: center;
-    font-size: .8rem;
-  }
-  
-  .comment-and-review-counts ul li i{
-    font-size: .9rem;
-    margin: 3px;
-    color: rgb(60, 60, 60, .7);
-  }
-  
-  .sec{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 2px;
-    background-color: #2dc44d;
-    border-radius: 7px;
-    color: #fff;
-  }
-
-  */
 
 .school-card-vertical-block{
   display: block;
   position: relative;
   background-color: #fff;
-  width: 270px;
-  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+  width: 250px;
+  box-shadow: 0 10px 13px -12px rgba(0,29,147, .15);
   border-radius: 7px;
   margin: 10px auto;
 }
 
 .school-card-vertical-block img{
   width: 100%;
-  height: auto;
+  max-height: 130px;
   object-fit: cover;
-  border-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .score{
@@ -160,40 +72,433 @@
   font-size: 14px;
   padding: 7px;
   /*background-color: #f79640;*/
-  background-color: #73ca14;
+  /*background-color: #73ca14;*/
+  background-color: #20357c;
   border-radius: 5px;
   color: #fff;
 }
 
-.inner{
+.approved-school{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5px;
+  left: 5px;
+  background-color: rgb(64, 64, 64, .6);
+  border-radius: 50%;
+}
+.approved-school svg{
+  /*fill: rgb(255, 99, 71);*/
+  /*fill: #2dc44d;*/
+  fill: orange;
+}
+
+.tooltip--right::before,
+.tooltip--right::after {
+  --scale:0;
+  position: absolute;
+  top: -4px;
+  left: 100%;
+  transform: translateX(2%) translateY(0) scale(var(--scale));
+  transform-origin: left center;
+}
+
+.tooltip--right::before{
+  content: attr(data-tooltip);
+  color: #fff;
+  background-color: rgb(60, 60, 60, .8);
+  font-size: .7rem;
+  padding: 7px;
+  border-radius: 7px;
+  width: max-content;
+}
+
+.tooltip--right:hover::before{
+  --scale:1;
+}
+
+.discount{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(64, 64, 64, .8);
+  top: 100px;
+  color: #fff;
   padding: 5px;
+  border-radius: 7px;
+  font-size: .8rem;
+}
+
+.discount svg{
+  fill: tomato;
+  margin-right: 5px;
+}
+
+.inner{
+  padding: 3px;
 }
 
 .school-name{
-  border: 1px solid rebeccapurple;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
 }
 
 .school-region{
-  border: 1px solid red;
-  font-size: .8rem;
+  font-size: .7rem;
   color: rgb(60, 60, 60);
+  margin-bottom: 7px;
 }
 
 .school-facilities ul li{
   display: flex;
   align-items: center;
   list-style: none;
-  font-size: .8rem;
+  font-size: .75rem;
   color: rgb(60, 60, 60);
-  border: 1px solid yellowgreen;
 }
 
 .school-facilities ul li svg{
-  width: 16px;
-  height: 16px;
   fill: tomato;
+  margin-right: 3px;
 }
+.school-card-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 5px;
+}
+
+.comment-and-review-counts ul{
+  display: flex;
+  list-style: none;
   
+}
+
+.comment-and-review-counts ul li{
+  color: rgb(60, 60, 60);
+  display: flex;
+  align-items: center;
+  font-size: .6rem;
+  margin: 5px 5px 0 0;
+}
+ 
+.comment-and-review-counts ul li svg{
+  fill: rgb(60, 60, 60, .7);
+  margin-right: 3px;
+}
+
+.sec a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: .8rem;
+  padding: 4px;
+  width: max-content;
+  /*background-color: #f79640;*/
+  background-color: #2dc44d;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sec a svg{
+  fill: #fff;
+}
+
+.swiper-pagination-bullets{
+  bottom: -4px !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: tomato !important;
+}
+
+.swiper-button-next{
+  color: rgb(60, 60, 60, .5) !important;
+  right: 5% !important;
+}
+
+.swiper-button-prev{
+  color: rgb(60, 60, 60, .5) !important;
+  left: 5% !important;
+}
+
+.popular-school-area>.swiper-container>.swiper-wrapper{
+  width: 100%;
+  max-height: 675px !important;
+  
+}
+
+.popular-school-area>.swiper-container>.swiper-wrapper>.swiper-slide {
+  height: calc((100% - 10px) / 2) !important;
+  
+}
+
+
+
+
+.component-recent-blogs{
+  max-width: 1060px;
+  margin: 40px auto;
+}
+
+.blogs-area{
+  display: flex;
+  height: auto;
+}
+
+.blogs-left-side{
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+
+.blogs-center-side{
+  display: flex;
+  max-width: 40%;
+  
+}
+
+.blogs-right-side{
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.blog-image{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;  
+}
+
+.gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6) 15%, rgba(255,255,255,0) 100%);
+}
+
+.blog-card{
+  display: block;
+  position: relative;
+  margin: 5px;
+  box-shadow: 0 10px 13px -12px rgba(0,29,147, .15);
+  
+}
+
+.blog-label{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.blog-label ul{
+  list-style: none;
+  display: flex;
+}
+
+.blog-label ul li{
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 1px 6px;
+}
+
+.blog-label ul li a{
+  text-decoration: none;
+  font-size: .7rem;
+  color: #fff
+}
+
+.label-cocuk{
+  background-color: purple;
+  
+}
+.label-hayata-dair{
+  background-color: tomato;
+}
+
+.label-anaokulu-ve-kres{
+  background-color: darkcyan;
+}
+
+.label-ilkokul{
+  background-color: cornflowerblue;
+}
+
+.label-ortaokul{
+  background-color: darkorange ;
+}
+
+.label-lise{
+  background-color: darkslategrey;
+}
+
+.label-kolejler{
+  background-color: forestgreen;
+}
+
+.label-egitim{
+  background-color: dimgray;
+}
+
+
+
+.blog-bottom{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+}
+
+.blog-title{
+  color: #fff;
+  font-size: 1rem;
+}
+
+.blog-created-date{
+  color: rgb(255, 255, 255, .7);
+  font-size: .7rem;
+}
+
+.blog-comment-and-review ul{
+  display: flex;
+  list-style: none;
+}
+
+.blog-comment-and-review ul li{
+  color: rgb(255, 255, 255, .7);
+  display: flex;
+  align-items: center;
+  font-size: .6rem;
+  margin: 5px 5px 0 0;
+}
+
+.blog-comment-and-review ul li svg{
+  fill: rgb(255, 255, 255, .7);
+}
+
+
+/* SSS */
+
+.component-sss{
+  max-width: 1060px;
+  margin: 20px auto;
+}
+
+.faq-header{
+  font-size: 1.2rem;
+  border-bottom: 1px dotted #ccc;
+  padding: 24px;
+  color: rgb(60, 60, 60);
+  font-weight: 700;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 15px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: .9rem;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 38px;
+  display: block;
+  cursor: pointer;
+  color: rgb(60, 60, 60);
+  font-weight: 700;
+}
+
+.panel-content {
+  font-size: .8rem;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+  color: rgb(60, 60, 60);
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
+  z-index: 5;
+  font-size: 1.2rem;
+  line-height: 100%;
+  color: tomato;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+
+
+/* section-schools-with-last-comment */
+
+
+.last-comment-area{
+  position: relative;
+  max-width: 1160px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+
+.last-comment-area > .swiper-container-last-comment > .swiper-wrapper{
+  max-height: 450px;
+}
+
+.last-comment-area > .swiper-button-next{
+  color: rgb(60, 60, 60, .5) !important;
+  right: 0 !important;
+}
+
+.last-comment-area > .swiper-button-prev{
+  color: rgb(60, 60, 60, .5) !important;
+  left: 0 !important;
+}
+

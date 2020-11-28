@@ -1,28 +1,67 @@
 $(document).ready(function() {
-  $('#responsive').lightSlider({
-    item:4,
-    loop:false,
-    slideMove:2,
-    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-    speed:600,
-    responsive : [
-        {
-            breakpoint:800,
-            settings: {
-                item:3,
-                slideMove:1,
-                slideMargin:6,
-              }
-        },
-        {
-            breakpoint:480,
-            settings: {
-                item:2,
-                slideMove:1
-              }
-        }
-    ]
-});
+ 
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    slidesPerColumn: 2,
+    spaceBetween: 0,
+    // init: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 0,
+      },
+      1024: {
+        slidesPerColumn: 2,
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    },
+    navigation: {
+      nextEl: '.popular-school-area > .swiper-button-next',
+      prevEl: '.popular-school-area > .swiper-button-prev',
+    },
+  });
+
+
+  var swiper = new Swiper('.swiper-container-last-comment', {
+    slidesPerView: 1,
+    slidesPerColumn: 2,
+    spaceBetween: 0,
+    // init: false,
+    pagination: {
+      el: 'swiper-container-last-comment > .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1024: {
+        slidesPerColumn: 1,
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    },
+    navigation: {
+      nextEl: '.last-comment-area > .swiper-button-next',
+      prevEl: '.last-comment-area > .swiper-button-prev',
+    },
+  });
+   
 });
 
 
