@@ -364,6 +364,113 @@
   margin: 0 auto;
 }
 
+
+
+
+.school-card-horizontal-block{
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-height: 175px;
+  box-shadow: 0 10px 13px -12px rgba(0,29,147, .15);
+  border-radius: 7px;
+  margin: 10px 5px;
+}
+
+.school-card-horizontal-block img{
+  max-width: 220px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.discount-horizontal{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(64, 64, 64, .8);
+  bottom: 0px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 7px;
+  font-size: .8rem;
+}
+
+.discount-horizontal svg{
+  fill: tomato;
+  margin-right: 5px;
+}
+
+.school-name-horizontal{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+}
+
+.school-region-horizontal{
+  font-size: .9rem;
+  color: rgb(60, 60, 60);
+  margin-bottom: 7px;
+}
+
+.sec-horizontal a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 7px;
+  width: max-content;
+  /*background-color: #f79640;*/
+  background-color: #2dc44d;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sec-horizontal a svg{
+  fill: #fff;
+}
+
+.horizontal-inner{
+  width: 100%;
+  padding-left: 1%;
+}
+
+.school-facilities-horizontal ul li{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: .8rem;
+  color: rgb(60, 60, 60);
+}
+
+.school-facilities-horizontal ul li svg{
+  fill: tomato;
+  margin-right: 3px;
+}
+
+
+.comment-and-review-counts-horizontal ul{
+  display: flex;
+  list-style: none;
+  
+}
+
+.comment-and-review-counts-horizontal ul li{
+  color: rgb(60, 60, 60);
+  display: flex;
+  align-items: center;
+  font-size: .7rem;
+  margin: 5px 5px 0 0;
+}
+ 
+.comment-and-review-counts-horizontal ul li svg{
+  fill: rgb(60, 60, 60, .7);
+  margin-right: 3px;
+}
+
+
+
 .school-card-vertical-block{
   display: block;
   position: relative;
@@ -560,6 +667,74 @@
   padding: 30px;
   background-color: tomato;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.free-consultancy-card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: tomato;
+  padding: 10px 35px;
+  font-size: .9rem;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.consultancy-icon-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding:10px;
+}
+
+.consultancy-icon-card img{
+  width: 45px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.consultancy-action-card a{
+  color: #fff;
+  display: block;
+  position: relative;
+  font-weight: 700;
+  padding: 10px;
+  background-color: rgba(55, 87, 130, 0.8);
+  border-radius: 12px;
+  transition: 0.4s;  
+  margin-top: 10px;
+  font-size: .7rem;
+  
+}
+
+.consultancy-action-card a:hover{
+  background-color: rgba(55, 87, 130, 0.95);
+}
+
+
+
+
+
+
 
 .consultancy-icon{
   align-items: center;
@@ -1434,13 +1609,260 @@ form ul{
 
 /* School List Page*/
 
-
-
-@media only screen and (max-width: 850px) {
-
-
+.row{
+  display: flex;
+  max-width: 1060px;
+  margin: 20px auto; 
 }
 
+.col-3{
+  flex-grow: 2;
+}
+
+.col-9{
+  flex-grow: 10;
+}
+
+
+.filter-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-item{
+  padding: 10px 45px;
+  background-color:rgba(255, 255, 255, 0.5);
+  font-size: .9rem;
+  box-shadow: 0 15px 45px -12px rgba(0,29,147, .15);
+  color: rgb(60, 60, 60);
+  border-radius: 7px;
+  
+}
+
+.filter-item ul{
+  list-style: none;
+  margin: 15px 0px;
+}
+
+.filter-item ul li{
+  margin: 7px 0px;
+}
+
+.filter-item ul .filter-title{
+  font-weight: 600;
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px dotted rgb(60, 60, 60, .3);
+}
+
+
+.search-result-info{
+  padding: 10px 10px;
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  width: 100%;
+}
+
+.schools-list-side{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: rgb(60, 60, 60);
+  
+}
+
+
+
+select[data-multi-select-plugin] {
+  display: none !important;
+}
+
+.multi-select-dropdown{
+  position: relative;
+  
+}
+
+.multi-select-component {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  padding: 3px 8px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding-bottom: 0px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.autocomplete-list {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.multi-select-component:focus-within {
+  box-shadow: inset 0px 0px 0px 2px #78ABFE;
+}
+
+.multi-select-component .btn-group {
+  display: none !important;
+}
+
+.multiselect-native-select .multiselect-container {
+  width: 100%;
+}
+
+.selected-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  background-color: #ededed;
+  white-space: nowrap;
+  margin: 1px 5px 5px 0;
+  height: 22px;
+  vertical-align: top;
+  cursor: default;
+}
+
+.selected-wrapper .selected-label {
+  max-width: 514px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 4px;
+  vertical-align: top;
+}
+
+.selected-wrapper .selected-close {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.49em;
+  margin-left: 5px;
+  padding-bottom: 10px;
+  height: 100%;
+  vertical-align: top;
+  padding-right: 4px;
+  opacity: 0.2;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  font-weight: 700;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-container .selected-input {
+  background: none;
+  border: 0;
+  height: 20px;
+  width: 60px;
+  padding: 0;
+  margin-bottom: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.search-container .selected-input:focus {
+  outline: none;
+}
+
+.dropdown-icon.active {
+  transform: rotateX(180deg)
+}
+
+.search-container .dropdown-icon {
+  display: inline-block;
+  padding: 10px 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  border: 0 !important;
+  /* needed */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* SVG background image */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23818181%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23818181%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-position: center;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+.search-container ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  z-index: 3;
+  margin-top: 29px;
+  width: 100%;
+  right: 0px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.search-container ul :focus {
+  outline: none;
+}
+
+.search-container ul li {
+  display: block;
+  text-align: left;
+  padding: 8px 29px 2px 12px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  min-height: 31px;
+}
+
+.search-container ul li:first-child {
+  border-top: 1px solid #ccc;
+  border-radius: 4px 0px 0 0;
+}
+
+.search-container ul li:last-child {
+  border-radius: 4px 0px 0 0;
+}
+
+
+.search-container ul li:hover.not-cursor {
+  cursor: default;
+}
+
+.search-container ul li:hover {
+  color: #333;
+  background-color: rgb(251, 242, 152);
+  ;
+  border-color: #adadad;
+  cursor: pointer;
+}
+
+/* Adding scrool to select options */
+.autocomplete-list {
+  max-height: 130px;
+  overflow-y: auto;
+}
 
 
 
@@ -1492,6 +1914,204 @@ form ul{
     justify-content: center;
     width: 100%;
   }
+
+  h1, h2 {
+    line-height: 1.2;
+    font-size: 1.4rem;
+  }
+
+  .section-title{
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .section-p{
+    font-size: .9rem;
+  }
+  
+
+
+
+  .search-form form{
+    flex-direction: column;
+  }
+
+  .headline-search {
+    width: 80%;
+  }
+
+  .headline-btn {
+    padding: 10px;
+    margin: 5px 5px;
+    width: 80%;
+  }
+
+
+  /* School Types */
+
+  .school-types{
+    
+    flex-direction: column;
+   
+  }
+
+  .school-type-card-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+  
+}
+
+.school-type-card-block img{
+    width: 45px;
+    height: auto;
+}
+
+.school-type-card-block .title{
+    font-size: .9rem;
+    margin-top: 0px;
+    
+}
+
+.school-type-card-block .title b{
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.school-type-card-block a{
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-top: 0px;
+  
+}
+
+.free-consultancy{
+  flex-direction: column;
+}
+
+.consultancy-action a{
+  padding: 12px;
+  font-size: .9rem;
+}
+
+
+/* most-searched-regions-by-users */
+
+.regions-card img{
+  width: 170px;
+}
+
+.searched-region{
+  font-size: .9rem;
+}
+
+
+
+
+/* Recent Blogs */
+
+.blogs-area{
+  flex-direction: column;
+}
+
+.blogs-left-side{
+  max-width: 100%;
+}
+
+.blogs-center-side{
+  max-width: 100%;
+}
+
+.blogs-right-side{
+  max-width: 100%;
+}
+
+.blog-label ul li a{
+  font-size: .8rem;
+}
+
+.blog-title{
+  color: #fff;
+  font-size: 1rem;
+}
+
+.blog-created-date{
+  font-size: .9rem;
+}
+
+.blog-comment-and-review ul li{
+  font-size: .7rem;
+}
+
+.blog-comment-and-review ul li svg{
+  fill: rgb(255, 255, 255, .7);
+}
+
+.last-comment-area > .swiper-container-last-comment > .swiper-wrapper{
+  max-height: 750px;
+}
+
+
+/* Consultancy Form */
+
+.consultancy-form{
+  flex-direction: column;
+}
+
+.form-content{
+  width: 100%;
+}
+
+.form-title{
+  font-size: 1.2rem;
+}
+
+.form-title p{
+  font-size: .8rem;
+}
+
+.form-steps ul li{
+  font-size: .9rem;
+
+}
+
+.frm-btn{
+  height: 40px;
+  width: 120px;
+}
+
+
+
+
+.footer-top{
+  flex-direction: column;
+}
+
+.footer-bottom{
+  flex-direction: column-reverse;
+}
+
+.footer-menu{
+  flex-direction: column;
+  
+}
+
+.footer-popular-region{
+  border-right: 0px;
+}
+
+.footer-most-searched{
+  border-right: 0px;
+}
+
+.f-contact ul li{
+  margin: 10px 10px;
+}
+
+
+
 
 
 }
